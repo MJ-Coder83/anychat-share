@@ -1,0 +1,11 @@
+{
+  "name": "anychat-share",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Read-only share relay for the anychat app",
+  "main": "server.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
