@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: anychat-share
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: SHARE_TTL_MS
+        value: "604800000"
